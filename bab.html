@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم باب الحارة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #000;
+      color: #f5c518;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .contact-buttons {
+      margin-top: 15px;
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 15px;
+      background: #f5c518;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-buttons a:hover {
+      background: #fff;
+      color: #000;
+    }
+    .category-section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(245,197,24,0.5);
+    }
+    .category-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: #f5c518;
+    }
+    .category-header i {
+      margin-left: 10px;
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .price-table th, .price-table td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+    .price-table th {
+      background: #333;
+      color: #f5c518;
+    }
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      position: relative;
+    }
+    footer a {
+      color: #f5c518;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .floating-icons a {
+      width: 45px;
+      height: 45px;
+      background: #f5c518;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .floating-icons a:hover {
+      background: #fff;
+      color: #000;
+    }
+    .qr {
+      margin-top: 20px;
+    }
+    .qr img {
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <h1>مطعم باب الحارة</h1>
+    <p>شارع أبو رجيله بجوار مدرسة النهضة</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/201004793224" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a href="https://www.facebook.com/share/1LpS9h3sbr/" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+      <a href="https://www.instagram.com/babelharaalshamy?igsh=aGlhZ2RtdmgzYWhq" target="_blank"><i class="fab fa-instagram"></i> انستجرام</a>
+    </div>
+  </header>
+
+  <!-- قسم البيتزا -->
+            <span id="pizza" class="category-anchor"></span>
+            <div class="category-section">
+                <div class="category-header">
+                    <i class="fas fa-pizza-slice category-icon"></i>
+                    <h3 class="category-title">البيتزا</h3>
+                </div>
+                
+                <table class="price-table">
+                       <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>نوع البيتزا</th>
+                                <th>مقاس m</th>
+                                <th>مقاس L</th>
+                                <th>مقاس XL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>مارجريتا
+                                </td>
+                                <td>80 ج</td>
+                                <td>110 ج</td>
+                                <td>150 ج</td>
+                            </tr>
+                            <tr>
+                                <td>الفصول الاربعه</td>
+                                <td>90 ج</td>
+                                <td>110 ج</td>
+                                <td>15 ج</td>
+                            </tr>
+                            <tr>
+                                <td>مشكل جبن</td>
+                                <td>95 ج</td>
+                                <td>120 ج</td>
+                                <td>150 ج</td>
+                            </tr>
+                            <tr>
+                                <td>تشكن فراخ</td>
+                                <td>100 ج</td>
+                                <td>140 ج</td>
+                                <td>180 ج</td>
+                            </tr>
+                            <tr>
+                                <td>كرسبي فراخ</td>
+                                <td>110 ج</td>
+                                <td>150 ج</td>
+                                <td>185 ج</td>
+                            </tr>
+                            <tr>
+                                <td>هوت دوج</td>
+                                <td>80 ج</td>
+                                <td>120 ج</td>
+                                <td>150 ج</td>
+                            </tr>
+                            <tr>
+                                <td>سوبر كطرنشي </td>
+                                <td>110 ج</td>
+                                <td>150 ج</td>
+                                <td>190 ج</td>
+                            </tr>
+                            <tr>
+                                <td>بيبروني</td>
+                                <td>105 ج</td>
+                                <td>140 ج</td>
+                                <td>180 ج</td>
+                            </tr>
+                            <tr>
+                                <td>باب الحاره</td>
+                                <td>130 ج</td>
+                                <td>170 ج</td>
+                                <td>200 ج</td>
+                            </tr>
+                              <tr>
+                                <td>تشكن رانش </td>
+                                <td>110 ج</td>
+                                <td>170 ج</td>
+                                <td>200 ج</td>
+                            </tr>
+                            <tr>
+                                <td>تشكن باربكيو </td>
+                                <td>110 ج</td>
+                                <td>195 ج</td>
+                                <td>200 ج</td>
+                            </tr>
+                            <tr>
+                                <td>شاورما فراخ </td>
+                                <td>100 ج</td>
+                                <td>135 ج</td>
+                                <td>180 ج</td>
+                            </tr>
+                            <tr>
+                                <td>بسطرمه</td>
+                                <td>110 ج</td>
+                                <td>150 ج</td>
+                                <td>190 ج</td>
+                            </tr>
+                             <tr>
+                                <td>مشكل فراخ   </td>
+                                <td>110 ج</td>
+                                <td>165 ج</td>
+                                <td>200 ج</td>
+                            </tr>
+                             <tr>
+                                <td>مشكل لحوم  </td>
+                                <td>130 ج</td>
+                                <td>185 ج</td>
+                                <td>220 ج</td>
+                            </tr>
+                             <tr>
+                                <td>لحمه مفرومه  </td>
+                                <td>120 ج</td>
+                                <td>175 ج</td>
+                                <td>220 ج</td>
+                            </tr>
+                             <tr>
+                                <td>عشاق جبن  </td>
+                                <td>90 ج</td>
+                                <td>130 ج</td>
+                                <td>170 ج</td>
+                            </tr>
+                             <tr>
+                                <td>برجر لحمه   </td>
+                                <td>110 ج</td>
+                                <td>170 ج</td>
+                                <td>220 ج</td>
+                            </tr>
+                             <tr>
+                                <td>برجر فراخ  </td>
+                                <td>100 ج</td>
+                                <td>140 ج</td>
+                                <td>180 ج</td>
+                            </tr>
+                             <tr>
+                                <td>إضافه حشو أطراف  </td>
+                                <td>40 ج</td>
+                                <td>50 ج</td>
+                                <td>60 ج</td>
+                            </tr>
+            <table
+                
+                        
+                      <!-- قسم ساندوتشات الفراخ -->
+            <span id="shawerma" class="category-anchor"></span>
+            <div class="category-section">
+                <div class="category-header">
+                    <i class="fas fa-utensils category-icon"></i>
+                    <h3 class="category-title">ساندوتشات بطاطس سور</h3>
+                </div>
+                
+               <table class="price-table">
+                  <thead>
+                            <tr>
+                                <th>الصنف</th>
+                                <th>سعر كبير</th>
+                                <th>سعر وسط</th>
+                                <th>سعر صغير</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>فلافل</td>
+                                <td>30 ج</td>
+                                <td>25 ج</td>
+                                <td>20 ج</td>
+                            </tr>
+                            <tr>
+                                <td>مكس (فلافل - بطاطس)</td>
+                                <td>30 ج</td>
+                                <td>25 ج</td>
+                                <td>20 ج</td>
+                            </tr>
+                            <tr>
+                                <td>بطاطس موتزيرلا</td>
+                                <td>40 ج</td>
+                                <td>35 ج</td>
+                                <td>25 ج</td>
+                            </tr>
+                            <tr>
+                                <td>مكس فلافل موتزيرلا</td>
+                                <td>40 ج</td>
+                                <td>35 ج</td>
+                                <td>25 ج</td>
+                            </tr>
+                            <tr>
+                                <td>بطاطس مبكس جين</td>
+                                <td>50 ج</td>
+                                <td>40 ج</td>
+                                <td>30 ج</td>
+                            </tr>
+                            <tr>
+                                <td>بطاطس جينة شيدر</td>
+                                <td>50 ج</td>
+                                <td>40 ج</td>
+                                <td>30 ج</td>
+                            </tr>
+                        </tbody>
+                </table>
+        <!-- قسم ساندوتشات الفراخ -->
+            <span id="shawerma" class="category-anchor"></span>
+            <div class="category-section">
+                <div class="category-header">
+                    <i class="fas fa-utensils category-icon"></i>
+                    <h3 class="category-title">ساندوتشات الفراخ</h3>
+                </div>
+                
+               <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>الصنف</th>
+                                <th>سعر صغير</th>
+                                <th>سعر وسط</th>
+                                <th>سعر كبير</th>
+                                <th>سعر فينو</th>
+                                <th>سعر كايزر</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>بانيه</td>
+                                <td>55 ج</td>
+                                <td>65 ج</td>
+                                <td>75 ج</td>
+                                <td>75 ج</td>
+                                <td>70 ج</td>
+
+                            </tr>
+                            <tr>
+                                <td>شيش طاوق</td>
+                                <td>60 ج</td>
+                                <td>70 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            </tr>
+                            <tr>
+                              <td>شرائح صدور</td>
+                                <td>60 ج</td>
+                                <td>70 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            </tr>
+                     <td>سوبر كرنشي</td>
+                                <td>60 ج</td>
+                                <td>75 ج</td>
+                                <td>90 ج</td>
+                                 <td>70 ج</td>
+                                <td>70 ج</td>
+                            <tr>
+                                  <td>شاورما </td>
+                                <td>50 ج</td>
+                                <td>65 ج</td>
+                                <td>80 ج</td>
+                                 <td>80 ج</td>
+                                <td>70 ج</td>
+                            <tr>
+                              <td>كرسبي</td>
+                                <td>55 ج</td>
+                                <td>70 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            <tr>
+                                <td>اسكالوب</td>
+                                <td>55 ج</td>
+                                <td>70 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            <tr>
+                                <td>زنجر</td>
+                                <td>55 ج</td>
+                                <td>70 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            <tr>
+                            <td>كوردن بلو</td>
+                                <td>60 ج</td>
+                                <td>75 ج</td>
+                                <td>85 ج</td>
+                                 <td>85 ج</td>
+                                <td>75 ج</td>
+                            <tr>
+                                   <td>كرسبي رانش</td>
+                                <td>65 ج</td>
+                                <td>80 ج</td>
+                                <td>95 ج</td>
+                                 <td>95 ج</td>
+                                <td>85 ج</td>
+                            <tr>
+                                <td>ساندوتش باب الحاره</td>
+                                <td>-- ج</td>
+                                <td>80 ج</td>
+                                <td>100 ج</td>
+                                 <td>85 ج</td>
+                                <td>85 ج</td>
+                            <tr>
+                                <tr>
+                                <td>مشكل فراخ</td>
+                                <td>-- ج</td>
+                                <td>75 ج</td>
+                                <td>90 ج</td>
+                                 <td>90 ج</td>
+                                <td>80 ج</td>
+                            <tr>
+                                <tr>
+                                <td>كفته لحمه</td>
+                                <td>-- ج</td>
+                                <td>80 ج</td>
+                                <td>100 ج</td>
+                                 <td>100 ج</td>
+                                <td>90 ج</td>
+                            <tr>
+                                <tr>
+                                <td>فاهيتا</td>
+                                <td>-- ج</td>
+                                <td>75 ج</td>
+                                <td>90 ج</td>
+                                 <td>80 ج</td>
+                                <td>80 ج</td>
+                            <tr>
+                                <tr>
+                                <td>إضافه بطاطس</td>
+                                <td>5 ج</td>
+                                <td>10 ج</td>
+                                <td>15 ج</td>
+                                 <td>10 ج</td>
+                                <td>10 ج</td>
+                            <tr>
+                                   <tr>
+                                <td>إضافه صوص شيدر </td>
+                                <td>10 ج</td>
+                                <td>20 ج</td>
+                                <td>30 ج</td>
+                                 <td>20 ج</td>
+                                <td>20 ج</td>
+                            <tr>
+                            </table>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- اعمل باقي الأقسام هنا زي الشاورما، المشويات، البطاطس إلخ بنفس التنسيق -->
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 مطعم باب الحارة. جميع الحقوق محفوظة</p>
+    <div>
+      <a href="https://www.facebook.com/share/1LpS9h3sbr/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/babelharaalshamy?igsh=aGlhZ2RtdmgzYWhq" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/201004793224" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="qr">
+      <img src="blob:https://web.whatsapp.com/87d7495e-5706-4b17-88e1-755fb10c4454" alt="QR Code">
+      <p>امسح الكود لزيارة صفحتنا</p>
+    </div>
+  </footer>
+
+  <!-- أيقونات عائمة -->
+  <div class="floating-icons">
+    <a href="https://wa.me/201004793224" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/1LpS9h3sbr/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/babelharaalshamy?igsh=aGlhZ2RtdmgzYWhq" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="blob:https://web.whatsapp.com/87d7495e-5706-4b17-88e1-755fb10c4454" target="_blank"><i class="fab fa-QR Code"></i></a>
+
+  </div>
+
+</body>
+</html>
